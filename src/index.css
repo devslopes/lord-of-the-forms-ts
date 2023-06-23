@@ -1,0 +1,164 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0px;
+}
+h4 {
+  margin: 0px 0px 10px 0px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+form label {
+  font-size: 20px;
+  padding-left: 4px;
+  font-family: RingBearer;
+}
+
+form input {
+  font-size: 15px;
+  padding-left: 4px;
+  font-family: MorrisRoman;
+}
+
+form input:not([type="submit"]) {
+  width: 300px;
+}
+
+input[type="submit"] {
+  padding: 10px;
+}
+
+form label {
+  margin-right: 10px;
+  flex: 1;
+}
+
+.input-wrap {
+  flex: 1;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#phone-input-1 {
+  width: 30px;
+}
+#phone-input-2 {
+  width: 30px;
+}
+#phone-input-3 {
+  width: 30px;
+}
+#phone-input-4 {
+  width: 30px;
+}
+
+#phone-input-1,
+#phone-input-2,
+#phone-input-3,
+#phone-input-4 {
+  text-align: center;
+}
+
+#phone-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+  width: 400px;
+}
+
+.error-message {
+  border: 1px solid black;
+  padding: 2px;
+  color: white;
+  font-family: MorrisRoman;
+  background-color: tomato;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+form label {
+  margin-right: 10px;
+  flex: 1;
+}
+
+.input-wrap {
+  flex: 1;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#phone-input-1 {
+  width: 30px;
+}
+#phone-input-2 {
+  width: 30px;
+}
+#phone-input-3 {
+  width: 30px;
+}
+
+#phone-input-1,
+#phone-input-2,
+#phone-input-3,
+#phone-input-4 {
+  text-align: center;
+}
+
+#phone-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+}
