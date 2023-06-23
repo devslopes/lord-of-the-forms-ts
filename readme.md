@@ -20,16 +20,16 @@ We are going to build out a form that's purpose is to gather and set the `userIn
 
 In order to complete this assignment, a student should be able to...
 
-- create an advanced controlled form
-- use onChange events to track the state of an input
-- use onSubmit events to trigger the submit of a form
-- use `e.preventDefault` to stop the default event of an `onSubmit`
-- be able to prevent typing certain characters by controlling the onChange event
-- use a ref in react in order to switch focus between elements on change (Telephone Input)
-- render client-side validation errors in react underneath the inputs
-- cleanly abstract validations
-- create a useful user-friendly UI for form submission
-- use onSubmit to cleanly trigger a change in state of a parent component
+- Create an advanced controlled form
+- Use onChange events to track the state of an input
+- Use onSubmit events to trigger the submit of a form
+- Use `e.preventDefault` to stop the default event of an `onSubmit`
+- Be able to prevent typing certain characters by controlling the onChange event
+- Use a ref in react in order to switch focus between elements on change (Telephone Input)
+- Render client-side validation errors in react underneath the inputs
+- Cleanly abstract validations
+- Create a useful user-friendly UI for form submission
+- Use onSubmit to cleanly trigger a change in state of a parent component
 
 ## Setup
 
@@ -80,17 +80,16 @@ Phone Number UI
 
 - [ ] When you store a phone number in state it should NOT have all the `-` characters in what you are storing
 - [ ] Display a phone number with the format `NN-NN-NN-N`
-- [ ] build a `formatPhoneNumber` function in `transformations.ts` that takes in a number like "1234567" and returns "12-34-56-7"
   - use this function in your `ProfileInformation` component to render the correct thing to the screen
 
 Phone Input
 
 - [ ] Create a `FunctionalPhoneInput` component to clean up code
 - [ ] Create a `ClassPhoneInput` component to clean up code
-- [ ] the telephone input should work EXACTLY like on the example site
-- [ ] typing in the max characters on one input should move to the next input
-- [ ] deleting should go to the previous input as necessary
-- [ ] inputs should be tracked with a state that looks like this ["", "", "", ""]
+- [ ] The telephone input should work EXACTLY like on the example site
+- [ ] Typing in the max characters on one input should move to the next input
+- [ ] Deleting should go to the previous input as necessary
+- [ ] Inputs should be tracked with a state that looks like this ["", "", "", ""]
 - [ ] A User cannot type any non-numeric characters into a telephone input
 
 City Information
@@ -112,6 +111,8 @@ Form
 Profile Information Component
 
 - You can share this between the `FunctionalApp` and the `ClassApp`
+- build a `capitalize` function in `transformations.ts` to correctly display a first and last name
+- build a `formatPhone` function in `transformations.ts` that will turn "1234567" into "12-34-56-7"
 
 Email Validations
 
