@@ -115,5 +115,3 @@ export const allCities = [
     "Willowbottom",
     "Woodhall",
 ];
-
-export const isCityValid = (input: string) => allCities.find(city => city.toLowerCase() === input.toLowerCase())

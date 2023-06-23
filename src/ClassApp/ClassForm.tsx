@@ -1,6 +1,4 @@
 import { Component } from "react";
-import { TextInput } from "../TextInput";
-import { ClassTelephoneInput } from "./ClassTelephoneInput";
 import { ErrorMessage } from "../ErrorMessage";
 
 const firstNameErrorMessage = "First name must be at least 2 characters long";
@@ -12,11 +10,7 @@ const phoneNumberErrorMessage = "Invalid Phone Number";
 export class ClassForm extends Component {
   render() {
     return (
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-        }}
-      >
+      <form>
         <u>
           <h3>User Information Form</h3>
         </u>

@@ -38,9 +38,7 @@ To get this project setup, you should:
 - Run `npm i` to install all dependencies
 - Run `npm run dev` to run the project
 
-## In order to pass this assignment you should
-
-### Standard Requirements
+## Standard Requirements
 
 - [ ] Setup eslint
 - [ ] Pass all linting checks
@@ -54,7 +52,7 @@ To get this project setup, you should:
 - [ ] No commented out blocks of code (Code comments are fine)
 - [ ] Setup a github repository with your submission as the `main` branch, you will submit a link to this for grading (NOT A ZIP FILE)
 
-### Typescript Specific Requirements
+## Typescript Specific Requirements
 
 - [ ] pass **ALL** type-checks
   - Check by running `npm run typecheck`
@@ -65,21 +63,52 @@ To get this project setup, you should:
   - [ ] example: `types.ts` should work fine
 - [ ] Unshared types should live in the component they are used in
 
-### Assignment Specific Requirements
+## Assignment Specific Requirements
+
+Example Template:
 
 - [ ] Get your code to function EXACTLY like [This Site](https://lord-of-the-forms.vercel.app/)
+
+Validation UI
+
 - [ ] Under input errors should not show UNLESS the user has already tried submitting once
 - [ ] Errors should go away as soon as the field is fixed, not on submit
 - [ ] If a user tries to submit a form with bad inputs, an alert message will say "Bad Inputs" then the exact errors will pop up under the incorrect inputs
 - [ ] When a user successfully submits the form, it should update the userInformation and show the user information in the ProfileInformation Component
-- [ ] In middle earth, phone numbers are of the format `NN-NN-NN-N` where each `N` represents any digit 0-9
-- [ ] A User cannot type any non-numeric characters into a telephone input
-- [ ] A submitted city must
-  - [ ] Be in the list of `allCites` found in `all-cities.ts`
-  - [ ] Does NOT have to be the same case, if you type in a valid city with different typing, this should be a VALID input
-- [ ] Create a `FunctionalTextInput` component to clean up code
+
+Phone Number UI
+
+- [ ] When you store a phone number in state it should NOT have all the `-` characters in what you are storing
+- [ ] Display a phone number with the format `NN-NN-NN-N`
+- [ ] build a `formatPhoneNumber` function in `transformations.ts` that takes in a number like "1234567" and returns "12-34-56-7"
+  - use this function in your `ProfileInformation` component to render the correct thing to the screen
+
+Phone Input
+
 - [ ] Create a `FunctionalPhoneInput` component to clean up code
-- [ ] Create a `ClassTextInput` component to clean up code
 - [ ] Create a `ClassPhoneInput` component to clean up code
+- [ ] the telephone input should work EXACTLY like on the example site
+- [ ] typing in the max characters on one input should move to the next input
+- [ ] deleting should go to the previous input as necessary
+- [ ] inputs should be tracked with a state that looks like this ["", "", "", ""]
+- [ ] A User cannot type any non-numeric characters into a telephone input
+
+City Information
+
+- [ ] A valid city should be in the list of `allCites` found in `all-cities.ts`
+- [ ] A valid city does NOT have to be the same casing,"Hobbiton" or "hobbiton" should pass validation
+- [ ] Make a `isValidCity` function that checks to see if an input is a valid city
+
+Text Inputs
+
+- [ ] Create a `FunctionalTextInput` component that groups the label and the input together
+- [ ] Create a `ClassTextInput` component to clean up code
+
+Form
+
 - [ ] Page must NOT reload after submitting
 - [ ] ClassApp Code and FunctionalApp Code should be treated as separate apps as far as state goes
+
+Profile Information Component
+
+- You can share this between the `FunctionalApp` and the `ClassApp`
