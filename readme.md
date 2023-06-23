@@ -112,3 +112,8 @@ Form
 Profile Information Component
 
 - You can share this between the `FunctionalApp` and the `ClassApp`
+
+Email Validations
+
+- You will need to validate that the email is a valid email
+- We've provided a function called `isEmailValid` in `validations.ts`

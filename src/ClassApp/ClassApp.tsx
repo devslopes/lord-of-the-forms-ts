@@ -9,7 +9,7 @@ const defaultUser: UserInformation = {
   firstName: "Default",
   lastName: "Default",
   phone: "1234567",
-  state: "Hobbiton",
+  city: "Hobbiton",
 };
 
 export class ClassApp extends Component<Record<string, never>, State> {
