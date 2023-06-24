@@ -77,6 +77,13 @@ Validation UI
 - [ ] Errors should go away as soon as the field is fixed, not on submit
 - [ ] If a user tries to submit a form with bad inputs, an alert message will say "Bad Inputs" then the exact errors will pop up under the incorrect inputs
 - [ ] When a user successfully submits the form, it should update the userInformation and show the user information in the ProfileInformation Component
+- [ ] First Name should be at least 2 characters long and should not contain numbers
+- [ ] Last Name should be at least 2 characters long and should not contain numbers
+- [ ] Email should pass the `isEmailValid` function
+- [ ] City should be valid according to the `City Information` section below
+  - [ ] You should have a `isCityValid` function located in `validations.ts` that returns true or false depending on the input
+- [ ] Phone number should be 7 characters long, and every characters should be a number 0-9
+  - [ ] You should have a `isPhoneValid` function located in `validations.ts` that returns true or false depending on the input
 
 Phone Number UI
 
