@@ -67,6 +67,8 @@ To get this project setup, you should:
 
 Example Template:
 
+My recommendation is read through all the requirements once, then focus more on matching 👇 that UI. Then at the end use the checklist to make sure that you covered all of the UI and requirements, this checklist should make more sense as you start coding.
+
 - [ ] Get your code to function EXACTLY like [This Site](https://lord-of-the-forms.vercel.app/)
 
 Validation UI
